@@ -12,33 +12,7 @@ int main(){
     cout<<"8. Exit\n";
     cout<<"Enter your choice: ";
     cin>>choice;
-    while(choice>0 && choice<8){
-        cout<<"Enter your choice: ";
-        cin>>choice;
-        if(choice==1){
-            // Load graph from file
-
-        }
-        else if(choice==2){
-            // Print all friends of a person
-
-        }else if(choice==3){
-            // Add friend to a person
-            
-        }else if(choice==4){
-            // Add a person to the social network
-
-        }else if(choice==5){
-            // Print all persons and their friends 
-
-        }else if(choice==6){
-            // Check if a person is a common friend
-
-        }else if(choice==7){
-            // Write graph to file
-            cout<<"Enter output file name: ";
-        }
-    }
+    while(choice != 8){
     switch(choice){
         case 1:
             // Load graph from file
@@ -68,6 +42,8 @@ int main(){
             cout<<"Invalid choice"<<endl;
     }
 
+    cin>>choice;
+    }
     
     return 0;
 }
